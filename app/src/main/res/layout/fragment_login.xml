@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/welcome_back"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Chào mừng quay trở lại,"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_below="@id/welcome_back"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_marginLeft="20dp"
+        android:text="Đăng Nhập !"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edit_text_email"
+                android:background="#EDECEC"
+                android:padding="10dp"
+                android:layout_gravity="center_vertical"
+                android:hint="@string/enter_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            app:passwordToggleEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/edit_text_password"
+                android:background="#EDECEC"
+                android:padding="10dp"
+                android:hint="@string/enter_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Switch
+                android:id="@+id/switch_remember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_toRightOf="@id/switch_remember"
+                android:textSize="16sp"
+                android:text="Nhớ tài khoản"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_alignParentRight="true"
+                android:textSize="16sp"
+                android:text="@string/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:padding="10dp"
+                android:id="@+id/image_view_back"
+                android:src="@drawable/ic_baseline_arrow_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/button_login"
+                android:layout_marginLeft="10dp"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:background="@drawable/custom_button_login"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:text="@string/login"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/image_02"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

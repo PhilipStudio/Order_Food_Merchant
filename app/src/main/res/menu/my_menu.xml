@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Đơn hàng"
+        android:id="@+id/order"
+        android:icon="@drawable/ic_baseline_chrome_reader_mode"/>
+
+    <item android:title="Báo cáo"
+        android:icon="@drawable/ic_baseline_bar_chart"
+        android:id="@+id/report"/>
+
+    <item android:title="Bình luận"
+        android:icon="@drawable/ic_baseline_comment"
+        android:id="@+id/comment"/>
+
+    <item android:icon="@drawable/ic_baseline_assignment"
+        android:title="Thực đơn"
+        android:id="@+id/menu"/>
+
+    <item android:icon="@drawable/ic_baseline_account_circle"
+        android:title="Tài khoản"
+        android:id="@+id/account"/>
+</menu>

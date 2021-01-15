@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Order Food Merchant</string>
+    <string name="enter_email">Nhập email</string>
+    <string name="enter_password">Nhập mật khẩu</string>
+    <string name="already_have_account">Bạn đã có tài khoản?</string>
+    <string name="forgot_password">Quên mật khẩu?</string>
+    <string name="login">Đăng Nhập</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="sign_out">Đăng xuất</string>
+</resources>
